@@ -40,6 +40,7 @@ export const TopicCard = ({ topic, userId }: TopicCardProps) => {
     <div className="flex flex-col rounded-lg border border-slate-200 p-4 shadow-md hover:bg-slate-50">
       <Link className="block p-4 text-xl" to={topic.id}>
         <h3 className="text-2xl font-bold">{topic.title}</h3>
+        <span className="text-sm">{topic.user.email}</span>
 
         <p
           className="my-6"
