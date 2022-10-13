@@ -5,6 +5,7 @@ const topicSortingOptions = [
   { label: "Newest", value: "newest" },
   { label: "Oldest", value: "oldest" },
   { label: "Most liked", value: "most-liked" },
+  { label: "Most commented", value: "most-commented" },
 ];
 
 export const TopicSorter = () => {

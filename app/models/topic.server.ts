@@ -87,6 +87,8 @@ export function getTopicListItems({
     orderBy:
       sortBy === "oldest"
         ? { createdAt: "asc" }
+        : sortBy === "most-commented"
+        ? { comments: { _count: "desc" } }
         : sortBy === "most-liked"
         ? { likes: { _count: "desc" } }
         : { createdAt: "desc" },
